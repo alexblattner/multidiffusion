@@ -32,8 +32,7 @@ from diffusers.pipelines.stable_diffusion.safety_checker import StableDiffusionS
 from diffusers.schedulers import DDIMScheduler, LMSDiscreteScheduler, PNDMScheduler,KarrasDiffusionSchedulers
 from diffusers.utils import deprecate, is_accelerate_available, is_accelerate_version, logging, randn_tensor, replace_example_docstring,PIL_INTERPOLATION
 from diffusers.models import ModelMixin
-from utils.Loras import load_lora_weights, unload_lora_weights
-from utils import kohya_lora_loader
+import kohya_lora_loader
 
 logger = logging.get_logger(__name__)  # pylint: disable=invalid-name
 
